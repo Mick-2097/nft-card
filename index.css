@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+}
+.card {
+    position: absolute;
+    width: 300px;
+    min-height: fit-content;
+    background: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;    
+    box-shadow: 20px 35px hsl(217, 54%, 10%);
+}
+.imgHover {
+    background: hsl(178, 100%, 50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.imgEquil {
+    opacity: 1;
+    width: 300px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+.imgEquil:hover {
+    opacity: 0.6;
+}
+.imgEquil:hover ~ .viewIcon {
+    opacity: 1;
+}
+.viewIcon {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: larger;    
+    transition-property: color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    margin: 24px 0 16px 0;
+
+}
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 16px;
+    align-items: flex-end;
+    margin: 1.5rem 0 0.9rem;
+}
+#eth {
+    transform: translateY(20%);
+}
+.clock {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin: 1.5rem 0 0.9rem;
+    font-size: 16px;
+}
+#clock {
+    transform: translateY(15%);
+}
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    border: white 1px solid;
+    border-radius: 50%;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.author {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    line-height: 35px;
+    margin-top: 0;
+}
+.jules {
+    font-size: 16px;
+}
+span {
+    color: hsl(0, 0%, 100%);
+}
+span:hover {
+    color: hsl(178, 100%, 50%);    
+    transition-property: color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+}
+.attribution { 
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

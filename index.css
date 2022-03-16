@@ -45,6 +45,7 @@ body {
 }
 .imgHover:hover > .imgEquil {
     opacity: 0.6;
+    cursor: pointer;
 }
 .viewIcon {
     position: absolute;
